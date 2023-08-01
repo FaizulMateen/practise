@@ -8,7 +8,48 @@
 </head>
 
 <body>
-
+    <p>What is media query in HTML? Media queries allow you to apply CSS styles depending on a device's general type (such as print vs. screen) or other characteristics such as screen resolution or browser viewport width. Media queries are used for the following:
+        To conditionally apply styles with the CSS @media and @import at-rules. </p>
+    <style>
+        .item {
+            font-size: 40px;
+            color: white;
+            background-color: aqua;
+            display: none;
+        }
+        
+        @media( max-width:300px) {
+            #item-1 {
+                display: block;
+                background-color: rgb(13, 9, 248);
+            }
+        }
+        
+        @media( min-width:301px) and ( max-width:500px) {
+            #item-2 {
+                display: block;
+                background-color: rgb(251, 21, 29);
+            }
+        }
+        
+        @media( min-width:501px) and ( max-width:900px) {
+            #item-3 {
+                display: block;
+                background-color: rgb(8, 253, 86);
+            }
+        }
+        
+        @media( min-width:901px) {
+            #item-4 {
+                display: block;
+                background-color: rgb(4, 170, 253);
+            }
+        }
+    </style>
+    <div id="item-1" class="item">device name small devices size of 0px to 300px</div>
+    <div id="item-2" class="item">device name tabs devices size of 301px to 500px</div>
+    <div id="item-3" class="item">device name desktop devices size of 501px to 900px</div>
+    <div id="item-4" class="item">device name large devices size of 901px to --px</div>
 
 </body>
 
