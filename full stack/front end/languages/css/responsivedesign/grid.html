@@ -8,7 +8,29 @@
 </head>
 
 <body>
-
+    <style>
+        #item {
+            background-color: red;
+            color: white;
+            font-size: 40px;
+            margin: 20px;
+            border: 2px solid black;
+        }
+        
+        #container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-template-rows: repeat(3, 200px);
+        }
+    </style>
+    <div class="container">
+        <div id="item-1" class="item">i am a box</div>
+        <div id="item-2" class="item">i am a box</div>
+        <div id="item-3" class="item">i am a box</div>
+        <div id="item-4" class="item">i am a box</div>
+        <div id="item-5" class="item">i am a box</div>
+        <div id="item-6" class="item">i am a box</div>
+    </div>
 </body>
 
 </html>
