@@ -2,28 +2,35 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
+    <title>Bootstrap Example</title>
+    <style>
+        body {
+            color: black;
+            background-image: url(./david-van-dijk-3LTht2nxd34-unsplash.jpg);
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body>
-    <div>
-        <style>
-            div {
-                width: 1500px;
-                height: 800px;
-                background-image: url(./david-van-dijk-3LTht2nxd34-unsplash.jpg);
-                font-size: 25px;
-            }
-        </style>
-        <h2>
-            <p>External CSS is a form of CSS which is used to add styling to multiple HTML pages at a time. It helps to design the layout of many HTML web pages simultaneously. The external CSS is always saved with the . css extension, and through this file,
-                we can change the complete style of our HTML web page.</p>
-        </h2>
-        <h1 style="color: black;">THIS IS EXTERNAL ONE CSS</h1>
-    </div>
+<body class="p-3 m-0 border-0 bd-example m-0 border-0 bg-dark">
+    <br><br><br><br><br><br><br><br>
+    <center>
+        <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <svg class="bd-placeholder-img rounded me-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <rect width="100%" height="100%" fill="#007aff"></rect>
+        </svg>
+                <strong class="me-auto">3 WAYS OF CSS-EXTERNAL</strong>
+                <small class="text-body-secondary"></small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close" fdprocessedid="r8dr5qui"></button>
+            </div>
+            <div class="toast-body ">THIS IS EXTERNAL CSS.</div>
+        </div>
+    </center>
 </body>
 
 </html>
