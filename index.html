@@ -5,35 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style type="text/css">
+        body {
+            background-color: aqua;
+        }
+        
+        .blink {
+            width: 500px;
+            height: 30px;
+            padding: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+        
+        span {
+            font-size: 30px;
+            font-family: times new roman;
+            color: black;
+            animation: blink 1s linear infinite;
+        }
+        
+        @keyframes blink {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 100;
+            }
+            100% {
+                opacity: 30;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div>
-        <style>
-            div {
-                width: 1500px;
-                height: 800px;
-                background-image: url(./pxfuel\ \(3\)\ \(1\).jpg);
-                background-repeat: no-repeat;
-                background-position: fixed;
-                font-size: 20px;
-            }
-        </style>
         <h1>
-            <p style="background-color:aliceblue;"></p>
-            FAIZUL FULL STACK NOTES
+
+            <div class="blink"><span>FAIZUL  FULLSTACK  NOTES</span></div>
         </h1>
+
         <h2>
-            <p>The term "full stack" refers to the technologies and skills needed to complete a project, with each individual component being a stack. Stacks can be mobile, Web or software specific. Typically, a software engineer will focus on one part of
-                development, either the front end or the back end or database</p>
+            <marquee>
+                <p>The term "full stack" refers to the technologies and skills needed to complete a project, with each individual component being a stack. Stacks can be mobile, Web or software specific. Typically, a software engineer will focus on one part
+                    of development, either the front end or the back end or database</p>
+            </marquee>
         </h2>
-        <a href="./full stack/front end/index.html">
-            <ul>
-                <li style="color: black;">LETS START</li>
-            </ul>
-        </a>
-        <p style="background-color:black;"></p>
+        <br><br><br><br><br><br><br><br>
+        <center>
+            <button type="button" class="btn btn-primary btn-lg"><a style="color:white;" href="./full stack/front end/index.html">LIST OF TOPICS</a></button>
+        </center>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
 </body>
 
 </html>
