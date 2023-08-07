@@ -6,13 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style type="text/css">
+        body {
+            background-color: beige;
+        }
+        
+        .blink {
+            width: 500px;
+            height: 30px;
+            padding: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+        
+        span {
+            font-size: 30px;
+            font-family: times new roman;
+            color: black;
+            animation: blink 1s linear infinite;
+        }
+        
+        @keyframes blink {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 100;
+            }
+            100% {
+                opacity: 30;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <center>
-        < <br><br><br><br><br><br><br><br>
-            <button type="button" class="btn btn-primary bg-info"><a style="color: white;" href="./bootrap.html">FRAMEWORK</a></button>
-    </center>
+    <h1>
+        <div class="blink"><span>LIST OF TOPICS:-</span></div>
+    </h1>
+
+    <button type="button" class="btn btn-primary bg-lg"><a style="color: white;" href="./bootrap.html">FRAMEWORK</a></button>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 
