@@ -5,56 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style type="text/css">
+        body {
+            background-color: beige;
+        }
+        
+        .blink {
+            width: 500px;
+            height: 30px;
+            padding: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+        
+        span {
+            font-size: 30px;
+            font-family: times new roman;
+            color: black;
+            animation: blink 1s linear infinite;
+        }
+        
+        @keyframes blink {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 100;
+            }
+            100% {
+                opacity: 30;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div>
-        <style>
-            div {
-                width: 1500px;
-                height: 800px;
-                background-image: url(./andrew-ridley-jR4Zf-riEjI-unsplash.jpg);
-                font-family: 'Times New Roman', Times, serif;
-                font-size: 25px;
-            }
-        </style>
-        <p hidden>style="background-color: blue;"></p>
-        <h1>ALL FRONTEND TOPICS</h1>
-        <p>THE TOPICS ARE :</p>
-        <a href="./html/index.html">
-            <ul>
-                <li style="color: blue;">HTML</li>
-            </ul>
-        </a>
-        <h3>
-            <p>HTML (HyperText Markup Language) is the code that is used to structure a web page and its content.</p>
-        </h3>
-        <a href="./css/index.html">
-            <ul>
-                <li style="color: blue;">CSS</li>
-            </ul>
-        </a>
-        <h3>
-            <p>CSS describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work. It can control the layout of multiple web pages all at once.</p>
-        </h3>
-        <a href="./javascript/index.html">
-            <ul>
-                <li style="color: blue;">JAVASCRIPT</li>
-            </ul>
-        </a>
-        <h3>
-            <p>JavaScript are image manipulation, form validation, and dynamic changes of content. To select an HTML element, JavaScript most often uses the document.getElementById() method.</p>
-        </h3>
-        <a href="./ts/index.html">
-            <ul>
-                <li style="color: blue;">TYPESCRIPT</li>
-            </ul>
-        </a>
-        <h3>
-            <p>TypeScript is a syntactic superset of JavaScript which adds static typing. This basically means that TypeScript adds syntax on top of JavaScript, allowing developers to add types. TypeScript being a "Syntactic Superset" means that it shares
-                the same base syntax as JavaScript, but adds something to it.</p>
-        </h3>
+        <h1>
+            <div class="blink"><span>ALL FRONTEND TOPICS:-</span></div>
+        </h1>
+        <h2>
+            <marquee>
+                <p>HTML: It (HyperText Markup Language) is the code that is used to structure a web page and its content.</p>
+
+            </marquee>
+        </h2>
+        <h2>
+            <marquee>
+                <p>CSS: It describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work. It can control the layout of multiple web pages all at once.</p>
+            </marquee>
+        </h2>
+        <h2>
+            <marquee>
+                <p>JavaScript : It are image manipulation, form validation, and dynamic changes of content. To select an HTML element, JavaScript most often uses the document.getElementById() method.</p>
+
+            </marquee>
+        </h2>
+        <h2>
+            <marquee>
+                <p>TypeScript: It is a syntactic superset of JavaScript which adds static typing. This basically means that TypeScript adds syntax on top of JavaScript, allowing developers to add types. TypeScript being a "Syntactic Superset" means that
+                    it shares the same base syntax as JavaScript, but adds something to it.</p>
+            </marquee>
+        </h2>
+        <button type="button" class="btn btn-primary bg-lg"><a style="color: white;"href="./html/index.html">HTML</a></button>
+        <button type="button" class="btn btn-primary bg-lg"><a style="color: white;" href="./css/index.html">CSS</a></button>
+        <button type="button" class="btn btn-primary bg-lg"><a style="color: white;"href="./javascript/index.html">JAVASCRIPT</a></button>
+        <button type="button" class="btn btn-primary bg-lg"><a style="color: white;"href="./typescript/index.html">TYPESCRIPT</a></button>
+
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

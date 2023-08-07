@@ -6,70 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style type="text/css">
+        body {
+            background-color: beige;
+        }
+        
+        .blink {
+            width: 500px;
+            height: 30px;
+            padding: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+        
+        span {
+            font-size: 30px;
+            font-family: times new roman;
+            color: black;
+            animation: blink 1s linear infinite;
+        }
+        
+        @keyframes blink {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 100;
+            }
+            100% {
+                opacity: 30;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div>
-        <style>
-            div {
-                width: 1500px;
-                height: 800px;
-                background-color: blanchedalmond;
-                font-size: 25px;
-                font-family: 'Times New Roman', Times, serif;
-            }
-        </style>
-        <p style="color: black;">THE TOPICS OF HTML ARE :</p>
-        <a href="./headings/index.html">
-            <ul>
-                <li style="color: black;">HEADING TAG</li>
-            </ul>
-        </a>
-        <a href="./a/a.html">
-            <ul>
-                <li style="color: black;">ANCHOR TAG</li>
-            </ul>
-        </a>
-        <a href="./form/form.html">
-            <ul>
-                <li style="color: black;">FORM TAG</li>
-            </ul>
-        </a>
-        <a href="./image/image.html">
-            <ul>
-                <li style="color: black;">IMAGE TAG</li>
-            </ul>
-        </a>
-        <a href="./p/p.html">
-            <ul>
-                <li style="color: black;">PARAGRAPH TAG</li>
-            </ul>
-        </a>
-        <a href="./video/video.html">
-            <ul>
-                <li style="color: black;">VIDEO TAG</li>
-            </ul>
-        </a>
-        <a href="./tables/tables.html">
-            <ul>
-                <li style="color: black;">TABLES TAG</li>
-            </ul>
-        </a>
-        <a href="./iframe/iframe.html">
-            <ul>
-                <li style="color: black;">IFRAME TAG</li>
-            </ul>
-        </a>
-        <a href="./list/ordered.html">
-            <ul>
-                <li style="color: black;">LIST-ORDERED</li>
-            </ul>
-        </a>
-        <a href="./list/unordered.html">
-            <ul>
-                <li style="color: black;">LIST-UNORDERED</li>
-            </ul>
-        </a>
+        <h1>
+            <div class="blink"><span>TOPICS OF HTML ARE:-</span></div>
+        </h1>
+        <h2>
+            <marquee>
+                <p>Heading Tag:- HTML defines six levels of headings, and these heading elements are H1, H2, H3, H4, H5, and H6.
+                    <p>The H1 element is the highest or most important level,</p>
+                    <p>and the H6 element is the least important. These different heading levels</p>
+                    help to communicate the organization and hierarchy of the content on a page.</p>
+            </marquee>
+            <marquee>
+                <p>Anchor Tag:- It is used to create a hyperlink on the webpage. This hyperlink is used to
+                    <p>link the webpage to other web pages or some section of the same web page.</p>
+                    <p> It's either used to provide an absolute reference or a relative reference as</p>
+                    its “href” value.</p>
+            </marquee>
+            <marquee>
+                <p> Form Tag:- The HTML (form) tag is used for creating a form for user input. A form can contain textfields,</p>
+                <p>checkboxes, radio-buttons and more. Forms are used to pass user-data to a specified URL.</p>
+            </marquee>
+            <marquee>
+                <p> Image Tag:- The (img) tag is used to embed an image in an HTML page. Images are not technically inserted into a web page; images are linked to web pages</p>
+            </marquee>
+            <marquee>
+                <p>Paragraph Tag:- To add a new paragraph in HTML, place your insertion mark cursor into the HTML document where you want to
+                    <p> add the new paragraph.Then type the paragraph start tag: (p). Then type the paragraph's text. At the end of the new</p>
+                    paragraph's text, type the end tag: (/p)</p>
+            </marquee>
+            <marquee>
+                <p>Video Tag:- The (video) tag is used to embed video content in a document, such as a movie clip or other video streams.
+                    <p>The (video) tag contains one or more (source) tags with different video sources. The browser will choose the first source</p>
+                    it supports.</p>
+            </marquee>
+            <marquee>
+                <p> Table Tag:- The (table) tag defines an HTML table. An HTML table consists of one (table) element and one or more (tr), (th), and (td) elements.
+                    <p> The (tr) element defines a table row, the (th) element defines a table header, and the (td) element</p>
+                    defines a table cell</p>
+            </marquee>
+            <marquee>
+                <p>Iframe Tag:- The (iframe) tag specifies an inline frame. An inline frame is used to embed another document within the current HTML document. Tip: Use CSS to style the (iframe)(/iframe)</p>
+            </marquee>
+            <marquee>
+                <p>Ordered list:- The (ol) tag defines an ordered list. An ordered list can be numerical or alphabetical. The (li) tag is used to define each list item.</p>
+            </marquee>
+            <marquee>
+                <p>Unordered list:- An unordered list typically is a bulleted list of items. HTML 3.0 gives you the ability to customise the bullets, to do without bullets and to wrap list items horizontally or vertically for multicolumn lists.</p>
+            </marquee>
+        </h2>
+
+        <button type="button" class="btn btn-primary bg-lg"><a style="color: white;"href="./headings/index.html">HEADING TAG</a></button><br>
+        <button type="button" class="btn btn-primary bg-lg"><a style="color: white;"href="./a/a.html">ANCHOR TAG</a></button><br>
+        <button type="button" class="btn btn-primary bg-lg"><a style="color: white;"href="./form/form.html">FORM TAG</a></button><br>
+        <button type="button" class="btn btn-primary bg-lg"><a style="color: white;"href="./image/image.html">IMAGE TAG</a></button><br>
+        <button type="button" class="btn btn-primary bg-lg"><a style="color: white;"href="./p/p.html">PARAGRAPH TAG</a></button><br>
+        <button type="button" class="btn btn-primary bg-lg"><a style="color: white;"href="./video/video.html">VIDEO TAG</a></button><br>
+        <button type="button" class="btn btn-primary bg-lg"><a style="color: white;"href="./tables/tables.html">TABLES TAG</a></button><br>
+        <button type="button" class="btn btn-primary bg-lg"><a style="color: white;"href="./iframe/index2.html">IFRAME TAG</a></button><br>
+        <button type="button" class="btn btn-primary bg-lg"><a style="color: white;"href="./list/ordered.html">LIST-ORDERED</a></button><br>
+        <button type="button" class="btn btn-primary bg-lg"><a style="color: white;"href="./list/unordered.html">LIST-UNORDERED</a></button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
