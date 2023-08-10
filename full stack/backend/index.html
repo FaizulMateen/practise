@@ -5,27 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style type="text/css">
+        body {
+            background-color: beige;
+        }
+        
+        .blink {
+            width: 500px;
+            height: 30px;
+            padding: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+        
+        span {
+            font-size: 30px;
+            font-family: times new roman;
+            color: black;
+            animation: blink 1s linear infinite;
+        }
+        
+        @keyframes blink {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 100;
+            }
+            100% {
+                opacity: 30;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div>
-        <style>
-            div {
-                width: 1500px;
-                height: 800px;
-                background-color: green;
-                background-image: url(./andrew-small-EfhCUc_fjrU-unsplash.jpg);
-                font-size: 25px;
-                font-family: 'Times New Roman', Times, serif;
-            }
-        </style>
-        <h1>LIST OF TOPICS</h1>
-        <a href="../backend/index.html">
-            <ul>
-                <li>BACKEND</li>
-            </ul>
-        </a>
+        <h1>
+
+            <div class="blink"><span>LIST OF TOPICS:-</span></div>
+        </h1>
+        <button type="button" class="btn btn-primary bg-lg"><a style="color: white;" href="./index.html">BACKEND</a></button>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

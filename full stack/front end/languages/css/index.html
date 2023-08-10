@@ -5,97 +5,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style type="text/css">
+        body {
+            background-color: beige;
+        }
+        
+        .blink {
+            width: 500px;
+            height: 30px;
+            padding: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+        
+        span {
+            font-size: 30px;
+            font-family: times new roman;
+            color: black;
+            animation: blink 1s linear infinite;
+        }
+        
+        @keyframes blink {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 100;
+            }
+            100% {
+                opacity: 30;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div>
-        <style>
-            div {
-                width: 1500px;
-                height: 800px;
-                background-image: url(./paulina-milde-jachowska-tXys13d5s-o-unsplash.jpg);
-                font-size: 20px;
-                font-family: 'Times New Roman', Times, serif;
-            }
-        </style>
-        <p>TOPICS OF CSS:</p>
+        <h1>
+            <div class="blink"><span>TOPICS OF CSS:-</span></div>
+        </h1>
         <a href="../css/index.html"></a>
-        <a href="./color/color.html">
-            <ul>
-                <li style="color: black;">COLOR TAG</li>
-            </ul>
-        </a>
-        <a href="./3 ways of css/external.html">
-            <ul>
-                <li style="color: black;">3 WAYS OF CSS-EXTERNAL</li>
-            </ul>
-        </a>
-        <a href="./3 ways of css/inline.html">
-            <ul>
-                <li style="color: black;">3 WAYS OF CSS-INLINE</li>
-            </ul>
-        </a>
-        <a href="./3 ways of css/internal.html">
-            <ul>
-                <li style="color: black;">3 WAYS OF CSS-INTERNAL</li>
-            </ul>
-        </a>
-        <a href="./background color/background.html">
-            <ul>
-                <li style="color: black;">BACKGROUND</li>
-            </ul>
-        </a>
-        <a href="./border-rad/border.html">
-            <ul>
-                <li style="color: black;">BORDER-RADIUS</li>
-            </ul>
-        </a>
-        <a href="./fontsize/fontsize.html">
-            <ul>
-                <li style="color: black;">FONT-SIZE</li>
-            </ul>
-        </a>
-        <a href="./position/sticky.html">
-            <ul>
-                <li style="color: black;">POSITION-STICKY</li>
-            </ul>
-        </a>
-        <a href="./position/fixed.html">
-            <ul>
-                <li style="color: black;">POSITION-FIXED</li>
-            </ul>
-        </a>
-        <a href="./overflow/auto.html">
-            <ul>
-                <li style="color: black;">OVERFLOW-AUTO</li>
-            </ul>
-        </a>
-        <a href="./overflow/hidden.html">
-            <ul>
-                <li style="color: black;">OVERFLOW-HIDDEN</li>
-            </ul>
-        </a>
-        <a href="./overflow/scroll.html">
-            <ul>
-                <li style="color: black;">OVERFLOW-SCROLL</li>
-            </ul>
-        </a>
-        <a href="./overflow/scroll.html">
-            <ul>
-                <li style="color: black;">CALCULATE-WITH</li>
-            </ul>
-        </a>
-        <a href="./responsivedesign/flux.html">
-            <ul>
-                <li style="color: black;">RESPONSIVEDESIGN-FLUX</li>
-            </ul>
-        </a>
-        <a href="./responsivedesign/mediaquery.html">
-            <ul>
-                <li style="color: black;">RESPONSIVEDESIGN-MEDIAQUERY</li>
-            </ul>
-        </a>
+        <h2>
+            <marquee>
+                <p> Color Tag:- HTML used to recognize 16 color names ("black", "white", "gray", "silver", "maroon", "red", "purple", "fushsia", "green", "lime", "olive", "yellow", "navy", "blue", "teal", and "aqua"), but new browsers can recognize 147 CSS3
+                    color names. a color number, such as "#FF0000", "#FFFFFF" (those are red and white).</p>
+            </marquee>
+            <marquee>
+                <p>3 Ways Of External:- It CSS is a form of CSS which is used to add styling to multiple HTML pages at a time. It helps to design the layout of many HTML web pages simultaneously. The external CSS is always saved with the . css extension,
+                    and through this file, we can change the complete style of our HTML web page</p>
+            </marquee>
+            <marquee>
+                <p>3 Ways Of Inline:- An inline CSS is used to apply a unique style to a single HTML element. An inline CSS uses the style attribute of an HTML element</p>
+            </marquee>
+            <marquee>
+                <p> 3 Ways Of Internal:- An internal CSS is used to define a style for a single HTML page. An internal CSS is defined in the (head) section of an HTML page, within a (style) element.</p>
+            </marquee>
+            <marquee>
+                <p>Background:- The background-color property sets the background color of an element. The background of an element is the total size of the element, including padding and border (but not the margin).</p>
+            </marquee>
+            <marquee>
+                <p>Border Radius:- The border-radius property defines the radius of the element's corners. Tip: This property allows you to add rounded corners to elements!</p>
+            </marquee>
+            <marquee>
+                <p>Font size:- It in HTML, use the CSS font-size property. Set it to the value you want and place it inside a style attribute.</p>
+            </marquee>
+            <marquee>
+                <p> Position Sticky:- A sticky element toggles between relative and fixed , depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).</p>
+            </marquee>
+            <marquee>
+                <p>Position fixed:- An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the
+                    element.
+                </p>
+            </marquee>
+            <marquee>
+                <p>Overflow Auto:- The auto value is similar to scroll , but it adds scrollbars only when necessary: You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content
+                    overflows an element's box.</p>
+            </marquee>
+            <marquee>
+                <p>overflow Hidden:- The hidden prevents scrollbars from showing up, even when they're necessary. Explanation of your CSS: margin: 0 auto horizontally aligns the element at the center. overflow:hidden prevents scrollbars from appearing</p>
+            </marquee>
+            <marquee>
+                <p>Overflow Scroll:- The content can be scrolled programmatically (for example, by setting the value of the scrollLeft property or the scrollTo() method), in which case. The element box is a scroll container. Overflow content is clipped at
+                    the element's overflow clip edge that is defined using the overflow-clip-margin property.</p>
+            </marquee>
+            <marquee>
+                <p>Calculate-Width:- In the above code example, the calc() function is used to give the width value to the heading. Here , we have used the value of the parent which is set to 100% of the screen width by default. The calc(50% – 100px) means
+                    that the width of the heading will be equal to “50% of the width of the parent – 100 px”.</p>
+            </marquee>
+            <marquee>
+                <p>Responsive Design-Flux:- Flux is an architecture for creating data layers in JavaScript applications. It was designed at Facebook along with the React view library</p>
+            </marquee>
+            <marquee>
+                <p>Responsive Design-MediaQuery:- A media query consists of a media type and can contain one or more expressions, which resolve to either true or false. The result of the query is true if the specified media type matches the type of device
+                    the document is being displayed on and all expressions in the media query are true</p>
+            </marquee>
+            <marquee>
+                <p>Responsive Design-Grid:- The Grid Layout allows us to position the items anywhere we like. The first item in the HTML code does not have to appear as the first item in the grid.</p>
+            </marquee>
+        </h2>
+        <button type="button" class="btn btn-primary bg-lg"><a style="color: white;"href="./color/color.html">COLOR TAG</a></button>
+        <button type="button" class="btn btn-primary bg-lg"><a style="color: white;"href="./3 ways of css/external.html">3 WAYS OF CSS-EXTERNAL</a></button>
+        <button type="button" class="btn btn-primary bg-lg"><a style="color: white;"href="./3 ways of css/inline.html">3 WAYS OF CSS-INLINE</a></button>
+        <button type="button" class="btn btn-primary bg-lg"><a style="color: white;"href="./3 ways of css/internal.html">3 WAYS OF CSS-INTERNAL</a></button>
+        <button type="button" class="btn btn-primary bg-lg"><a style="color: white;"href="./background color/background.html">BACKGROUND</a></button>
+        <button type="button" class="btn btn-primary bg-lg"><a style="color: white;"href="./border-rad/border.html">BORDER-RADIUS</a></button>
+        <button type="button" class="btn btn-primary bg-lg"><a style="color: white;"href="./fontsize/fontsize.html">FONT-SIZE</a></button>
+        <button type="button" class="btn btn-primary bg-lg"><a style="color: white;"href="./position/sticky.html">POSITION-STICKY</a></button>
+        <button type="button" class="btn btn-primary bg-lg"><a style="color: white;"href="./position/fixed.html">POSITION-FIXED</a></button>
+        <button type="button" class="btn btn-primary bg-lg"><a style="color: white;"href="./overflow/auto.html">OVERFLOW-AUTO</a></button>
+        <button type="button" class="btn btn-primary bg-lg"><a style="color: white;"href="./overflow/hidden.html">OVERFLOW-HIDDEN</a></button>
+        <button type="button" class="btn btn-primary bg-lg"><a style="color: white;"href="./overflow/scroll.html">OVERFLOW-SCROLL</a></button>
+        <button type="button" class="btn btn-primary bg-lg"><a style="color: white;"href="./calculate-with/cal.html">CALCULATE-WITH</a></button>
+        <button type="button" class="btn btn-primary bg-lg"><a style="color: white;"href="./responsivedesign/flux.html">RESPONSIVEDESIGN-FLUX</a></button>
+        <button type="button" class="btn btn-primary bg-lg"><a style="color: white;"href="./responsivedesign/mediaquery.html">RESPONSIVEDESIGN-MEDIAQUERY</a></button>
+        <button type="button" class="btn btn-primary bg-lg"><a style="color: white;"href="./responsivedesign/grid.html">RESPONSIVEDESIGN-GRID</a></button>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
 </body>
+
 
 </html>

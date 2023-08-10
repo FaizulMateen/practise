@@ -1,33 +1,31 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
+    <title>Bootstrap Example</title>
+    <style>
+        body {
+            background-image: url(./lum3n--RBuQ2PK_L8-unsplash.jpg);
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body>
-    <h1>
-        <p>The background-color property sets the background color of an element. The background of an element is the total size of the element, including padding and border (but not the margin).</p>
-    </h1>
-    <div>
-        <style>
-            div {
-                width: 1500px;
-                height: 800px;
-                background-image: url(./lum3n--RBuQ2PK_L8-unsplash.jpg);
-                font-size: 25px;
-            }
-        </style>
-        <style>
-            div {
-                width: 200px;
-                height: 200px;
-                background-color: green;
-            }
-        </style>
-        <div></div>
+<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+    <br><br><br><br><br><br><br><br>
+
+    <div class="bg-success p-2 text-white">
+        This is default success background
+    </div>
+    <div class="bg-success p-2" style="--bs-bg-opacity: 0.5">
+        <p>
+            The background-color property sets the background color of an element. The background of an element is the total size of the element, including padding and border (but not the margin).
+        </p>
     </div>
 </body>
 
