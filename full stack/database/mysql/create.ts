@@ -14,4 +14,6 @@ con.query("CREATE DATABASE shaik",(err:any,res:any)=>{
 })
 
 
+
+
 //var mysql=require('mysql')
